@@ -1,9 +1,9 @@
 # Book Search Engine
 
-## AS A developer who writes about tech
+## AS AN avid reader
 
-  * I WANT a CMS-style blog site
-  * SO THAT I can publish articles, blog posts, and my thoughts and opinions
+  * I WANT to search for new books to read
+  * SO THAT I can keep a list of books to purchase
   
 ## Screenshot
 
@@ -15,55 +15,36 @@ https://swan-book-search-engine.herokuapp.com/
     
 ## Usage
 
-* GIVEN a CMS-style blog site
+* GIVEN a book search engine
 
-* WHEN I visit the site for the first time
-  THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
-  
-* WHEN I click on the homepage option
-  THEN I am taken to the homepage
-  
-* WHEN I click on any other links in the navigation
-  THEN I am prompted to either sign up or sign in
-  
-* WHEN I choose to sign up
-  THEN I am prompted to create a username and password
-  
-* WHEN I click on the sign-up button
-  THEN my user credentials are saved and I am logged into the site
-  
-* WHEN I revisit the site at a later time and choose to sign in
-  THEN I am prompted to enter my username and password
-  
-* WHEN I am signed in to the site
-  THEN I see navigation links for the homepage, the dashboard, and the option to log out
-  
-* WHEN I click on the homepage option in the navigation
-  THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created
-  
-* WHEN I click on an existing blog post
-  THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment
-  
-* WHEN I enter a comment and click on the submit button while signed in
-  THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
-  
-* WHEN I click on the dashboard option in the navigation
-  THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post
-  
-* WHEN I click on the button to add a new blog post
-  THEN I am prompted to enter both a title and contents for my blog post
-  
-* WHEN I click on the button to create a new blog post
-  THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post
-  
-* WHEN I click on one of my existing posts in the dashboard
-  THEN I am able to delete or update my post and taken back to an updated dashboard
-  
-* WHEN I click on the logout option in the navigation
-  THEN I am signed out of the site
-  
-* WHEN I am idle on the page for more than a set time
-  THEN I am automatically signed out of the site 
+* WHEN I load the search engine THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
+
+* WHEN I click on the Search for Books menu option THEN I am presented with an input field to search for books and a submit button
+
+* WHEN I am not logged in and enter a search term in the input field and click the submit button THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
+
+* WHEN I click on the Login/Signup menu option THEN a modal appears on the screen with a toggle between the option to log in or sign up
+
+* WHEN the toggle is set to Signup THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
+
+* WHEN the toggle is set to Login THEN I am presented with two inputs for an email address and a password and login button
+
+* WHEN I enter a valid email address and create a password and click on the signup button THEN my user account is created and I am logged in to the site
+
+* WHEN I enter my account’s email address and password and click on the login button THEN I the modal closes and I am logged in to the site
+
+* WHEN I am logged in to the site THEN the menu options change to Search for Books, an option to see my saved books, and Logout
+
+* WHEN I am logged in and enter a search term in the input field and click the submit button THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
+
+* WHEN I click on the Save button on a book THEN that book’s information is saved to my account
+
+* WHEN I click on the option to see my saved books THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
+
+* WHEN I click on the Remove button on a book THEN that book is deleted from my saved books list
+
+* WHEN I click on the Logout button THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
+Mock-Up
 
 ## Contribution
 
